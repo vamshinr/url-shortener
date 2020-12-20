@@ -1,0 +1,46 @@
+<!-- {% include 'home.html' %} -->
+<head>
+<style type="text/css"> 
+      
+    th:tr{ 
+        color: blue; 
+  
+    } 
+    tr:nth-of-type(2n){ 
+        border: 1px solid black; 
+        background-color: rgba(150, 150, 150, 0.5); 
+  
+    } 
+  
+    td{ 
+        padding: 8px 8px; 
+        border: 1px solid black; 
+    } 
+	input{
+	  background-color: #008CBA;
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	}
+	
+</style> 
+</head>
+<body>
+<center>
+<br>
+<h2>GENERATED URL<h2>
+<table>
+<tr><td><h3><b>ORIGINAL   :   </b></h3></td><td>{{original_url}}</td></tr>
+<tr><td><h3><b>SHORTENED   :   </b></h3></td><td>{{short_url}}</td></tr>
+</table>
+<br>
+<form action={{redirect_url}}>
+    <input type="submit" value="REDIRECT" />
+</form>
+</center>
+</body>
+
